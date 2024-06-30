@@ -13,6 +13,8 @@ import xyz.caoxin.group.bot.constants.InfoConstants;
 import xyz.caoxin.group.bot.data.WireRepo;
 import xyz.caoxin.group.bot.util.bot.MiraiBotUtils;
 
+import java.io.IOException;
+
 
 @SpringBootApplication
 @Slf4j
@@ -20,7 +22,7 @@ public class BotApplication {
     public static Bot miraiBot;
     public static MiraiLogger miraiLogger;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         SpringApplication.run(BotApplication.class, args);
         log.info(InfoConstants.APP_START_SUCCESS);
 
